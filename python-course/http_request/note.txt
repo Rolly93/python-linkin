@@ -1,0 +1,29 @@
+Practica para manejo de HTTP Request
+GET
+POST
+
+se compone en 3
+    1.- Linea de Inicio
+    2.- Cabacera de Headers
+    3.- Cuerpo
+Metodos HTTP
+    GET : servidor → Cliente
+    POST : Guardar Cliente → Servidor
+    PUT: modificaion de datos Cliente → Servidor
+    Delete: Eliminar Datos Cliente → Servidor
+
+Codigos de estado HTTP:
+1xx →   respeustas informativas
+2xx →   Respuestas satifactores
+3xx →   redireccion
+4xx →   error Cliente
+5xx →   Error de servidor
+
+HTTPS (HyperText Transfer Protocol Secure)
+    Protocolo de Seguridad
+
+API (Interfaz de programacion de aplicacion)
+
+Funcion de protocolos de comunicacion
+    Usa los metodos de HTTP
+    Tiene endpoints

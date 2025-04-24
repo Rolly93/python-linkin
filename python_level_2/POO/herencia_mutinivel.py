@@ -20,10 +20,18 @@ class Deportista(Persona):
     
     def ejecutar_accion(self):
         # se tiene la opcion de mandar llamar el metodo de la clase padre  como no mandar a llamarlo
-        super().ejecutar_accion()  
+        #super().ejecutar_accion()  
         print(f"Practicando {self.deporte}")
 
-pedro = Deportista("Pedro","Cortez",26,"Soccer")
-pedro.agregar_documento_identidad(1254)
-print(pedro.deporte)
-pedro.ejecutar_accion()
+class Ciclista(Deportista):
+    def __init__(self, nombre, apellido, edad):
+        self.deporte = "Ciclismo"
+        super().__init__(nombre, apellido, edad, self.deporte)
+    
+    def pedalear(self):
+        print("Pedaleando")
+
+nairo =Ciclista("Nairo","Quintana",33)
+nairo.ejecutar_accion()
+nairo.agregar_documento_identidad(125)
+nairo.pedalear()
